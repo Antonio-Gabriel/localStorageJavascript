@@ -1,0 +1,27 @@
+
+// Autenenticação de usuário
+// const auth = (email,pass)=>{
+//     if(getUsers){
+//         let userNameFormat = email.replace('.com','').replace('@','')     
+//         let userData = Object.values(getUsers).filter((item)=>{
+//             if(item.userName == userNameFormat && item.password == pass ){
+//                 return item
+//             }
+//         })
+//         if(userData != null){
+//             logedUser(userData)            
+//         }else{ msg.innerHTML += '<p>Denied access!</p>' }
+//     }else{
+//         msg.innerHTML += '<p>Create a bill!</p>'        
+//     }
+// }
+// // Função usada para inserir os usuários em um localStorage Separado
+// // para recolha dos seus dados
+// const logedUser = (data)=>{
+//     let [{ name, email }] = data    
+//     const userPermit = {
+//         name: name,     
+//         email: email,        
+//     }
+//     localStorage.setItem('logedUser',JSON.stringify(userPermit))
+// }
