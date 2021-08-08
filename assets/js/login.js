@@ -3,7 +3,7 @@ const msg = document.querySelector('#msg')
 const form = document.forms[0]
 const elem = form.elements
 // Autenenticação de usuário
-const auth = (email,pass)=>{
+const auth = (email, pass)=>{
     if(verifyData()){
         if(getUsers){
             let userNameFormat = email.replace('.com','').replace('@','')     
@@ -45,8 +45,8 @@ const verifyData = ()=>{
 const logedUser = (data)=>{
     let [{ name, email }] = data    
     const userPermit = {
-        name: name,     
-        email: email,        
+        name,     
+        email     
     }
     localStorage.setItem('logedUser',JSON.stringify(userPermit))
 }
